@@ -51,7 +51,7 @@ export default function Movie({movie}){
             }
             i++;
         }
-        if(JSON.parse(localStorage.getItem("nominees")).length == 5){
+        if(JSON.parse(localStorage.getItem("nominees")).length === 5){
             sendNotification('Great job! You nominated 5 movies.')
         }
     })
