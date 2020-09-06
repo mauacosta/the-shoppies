@@ -66,7 +66,7 @@ function Search(){
                 />
             </div>
             <div className="movies">
-                {loading ? <object type="image/svg+xml" data="/load.svg" className="loading">Loading...</object> : ""}
+                {loading ? <object type="image/svg+xml" data={process.env.PUBLIC_URL + "/load.svg"} className="loading">Loading...</object> : ""}
                 {!results ? <p className="message">{message}</p> : results.map(movie => (
                    <Movie movie={movie} key={movie.imdbID} />
                 ))}

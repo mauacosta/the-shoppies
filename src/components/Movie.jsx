@@ -60,7 +60,7 @@ export default function Movie({movie}){
 
     return(
         <div className="movieCard">
-            <img className={nominated ? "disabled" : "enabled"} src={(!movie.Poster || movie.Poster === "N/A") ? '/img/noImage.png' :  movie.Poster} alt={`${movie.Title} poster`}/>
+            <img className={nominated ? "disabled" : "enabled"} src={(!movie.Poster || movie.Poster === "N/A") ? process.env.PUBLIC_URL + '/img/noImage.png' :  movie.Poster} alt={`${movie.Title} poster`}/>
             <h5>{movie.Title}</h5>
             <p>{movie.Year}</p>
             <button className={nominated ? "disabled" : "enabled"} onClick={nominate}> {nominated ? "Nominated" : "Nominate"}</button>
