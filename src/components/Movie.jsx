@@ -42,17 +42,19 @@ export default function Movie({movie}){
 
     useEffect (() =>{
         let nominees = JSON.parse(localStorage.getItem("nominees"))
-        let i = 0
-        let found = false
-        while (nominees.length > i && !found){
-            if(nominees[i].imdbID === movie.imdbID){
-                found = true
-                isNominated(true)
-            }
+        if(nominees){
+            let i = 0
+            let found = false
+            while (nominees.length > i && !found){
+                if(nominees[i].imdbID === movie.imdbID){
+                    found = true
+                    isNominated(true)
+                }
             i++;
-        }
-        if(JSON.parse(localStorage.getItem("nominees")).length === 5){
-            sendNotification('Great job! You nominated 5 movies.')
+            }
+            if(JSON.parse(localStorage.getItem("nominees")).length === 5){
+                sendNotification('Great job! You nominated 5 movies.')
+            }
         }
     })
 
