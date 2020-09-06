@@ -1,0 +1,35 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F9FAFB;
+  position: relative;
+}
+
+.notification{
+  animation: notification 5s linear forwards;
+  position: fixed;
+  top: 0;
+  right: 1em;
+  padding: 1em 0.6em;
+  z-index: 2;
+  background-color: #212B36;
+  color: white;
+  border-radius: 0.5em;
+}
+
+@keyframes notification {
+  0%{
+    right: 0;
+  }
+
+  10%{
+    right: 1em;
+  }
+
+  80%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
