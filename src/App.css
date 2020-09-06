@@ -209,12 +209,12 @@ button{
   .movies .movieCard p{font-size: 1.1em;}
 
   .movies .movieCard:hover img{
-    opacity: 60%;
+    opacity: 0.6;
     cursor: pointer; 
   }
 
   .movies .movieCard img.disabled{
-    opacity: 60%;
+    opacity: 0.6;
   }
 
   .movies .movieCard:hover button{
