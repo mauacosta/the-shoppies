@@ -25,7 +25,7 @@ function Search(){
         }else{
             localStorage.setItem('lastSearch', query)
         }
-        const searchUrl  = `http://www.omdbapi.com/?i=tt3896198&apikey=7769270d&s=${query}&type=movie`
+        const searchUrl  = `https://www.omdbapi.com/?i=tt3896198&apikey=7769270d&s=${query}&type=movie`
         if(cancel){
             cancel.cancel()
         }
