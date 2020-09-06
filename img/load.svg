@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="150" viewBox="0 0 767 221">
+    <g fill="#43467F" fill-rule="evenodd">
+        <ellipse id="first" cx="112.5" cy="110.5" rx="112.5" ry="110.5"/>
+        <ellipse id="second" cx="383.5" cy="110.5" rx="112.5" ry="110.5"/>
+        <ellipse id="third" cx="654.5" cy="110.5" rx="112.5" ry="110.5"/>
+    </g>
+    
+    <animate 
+    xlink:href="#first"
+    attributeType="CSS"
+    attributeName="opacity" 
+    from="0"
+    to="1"
+    begin="0"
+    dur="3s"
+    repeatCount="indefinite"
+    d="first-anim" />
+    
+    <animate 
+    xlink:href="#second"
+    attributeType="CSS"
+    attributeName="opacity" 
+    from="0"
+    to="1" 
+    dur="3s"
+    begin="1s"
+    repeatCount="indefinite"
+    d="second-anim" />
+    
+    <animate 
+    xlink:href="#third"
+    attributeType="CSS"
+    attributeName="opacity" 
+    from="0"
+    to="1" 
+    dur="3s"
+    begin="2s"
+    repeatCount="indefinite"
+    d="third-anim" />
+     
+</svg>
+
