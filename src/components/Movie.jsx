@@ -26,11 +26,11 @@ export default function Movie({movie}){
         }
 
         if(nominees.length >= 5){
-            sendNotification('You can nominate only 5 movies.')
+            sendNotification('You can only nominate 5 movies.')
 
         }
         else if(nominated){
-            sendNotification('You already nominated this film.')
+            sendNotification('You have already nominated this movie.')
         }
         else{
             nominees.push(movie)
