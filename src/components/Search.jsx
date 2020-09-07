@@ -18,7 +18,7 @@ function Search(){
 
     const fetchMovies = (query) => {
         if(!query){
-            let placeholderTemp = localStorage.getItem('lastSearch') ? localStorage.getItem('lastSearch') : randomMovie()
+            let placeholderTemp = (localStorage.getItem('lastSearch') && localStorage.getItem('lastSearch').length !== 1) ? localStorage.getItem('lastSearch') : randomMovie()
             setPlaceholder(placeholderTemp)
             query = placeholderTemp
             localStorage.setItem('lastSearch', '')
